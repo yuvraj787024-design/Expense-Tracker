@@ -1,6 +1,6 @@
 
 
-const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = "https://expense-tracker-3-tem7.onrender.com/api";
 
 let categoryChartInstance = null;
 let monthlyChartInstance = null;
