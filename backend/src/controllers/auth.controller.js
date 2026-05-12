@@ -2,7 +2,7 @@ const registerModel = require('../models/auth.model')
 const jwt = require('jsonwebtoken');
 const bcrypt = require("bcryptjs");
 const emailService = require("../services/email.service");
-const tokenBlackListModel = require('../models/blacklist.model');
+const tokenBlackListModel = require('../models/blackList.model');
 
 
 async function registerUser(req,res) {
