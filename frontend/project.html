@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="top-bar">
+    <h1>Transactions</h1>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+    <div class="balance-row">
+    <button class="add-btn" onclick="add(event)">Add</button>
+
+    <div class="balance-box">
+        <h1 class="balance">Balance : </h1>
+    </div>
+</div>
+
+<div class="budget-box">
+    <h1 class="budget">Budget : </h1>
+    <button onclick="changeBudget()">Change Budget</button>
+</div>
+    <div class="transaction">
+        <h3>Expense</h3>
+        <input type="number" id="expense">
+        <h3>Category of Expense</h3>
+        <input type="text" id="expenseType">
+        <h3>Expense name</h3>
+        <input type="text" id="expenseName">
+    </div>
+    <!-- <button onclick="add(event)">Add</button> -->
+
+    <div class="expense-output"></div>
+
+    <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px; justify-content:center;">
+
+    <div style="width:350px;">
+        <canvas id="categoryChart"></canvas>
+    </div>
+
+    <div style="width:500px;">
+        <canvas id="monthlyChart"></canvas>
+    </div>
+
+</div>
+
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</html>
