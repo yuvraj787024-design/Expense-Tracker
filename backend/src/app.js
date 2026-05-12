@@ -11,8 +11,12 @@ app.use(cookieParser())
 
 
 app.use(cors({
-    origin:"https://expense-tracker-pied-beta-16.vercel.app",
-    credentials:true
+    origin: [
+        "http://localhost:5500",
+        "http://127.0.0.1:5500",
+        "https://expense-tracker-7l5v.vercel.app"
+    ],
+    credentials: true
 }))
 
 app.use('/api/auth',authRoutes)
